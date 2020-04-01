@@ -18,3 +18,17 @@ body{
     max-height: 250px;
     background-size: cover;
 }
+.imgHtml{
+    width: 200px;
+    height: 200px;
+}
+.imgServices{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.imgJs{
+    width: 350px;
+    height: 200px;
+}
