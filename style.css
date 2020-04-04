@@ -3,6 +3,9 @@ body{
     padding: 0;
     height: 100vh;
 }
+.navbar{
+    border-bottom: 1px solid black;
+}
 
 .imgProfilAcc{
     width: 150px;
@@ -14,8 +17,8 @@ body{
 }
 
 .imgMax{
-    max-width: 350px;
-    max-height: 250px;
+    width: 100%;
+    height: 250px;
     background-size: cover;
 }
 .imgHtml{
@@ -31,4 +34,13 @@ body{
 .imgJs{
     width: 350px;
     height: 200px;
+}
+
+.fa{
+    font-size: 40px;
+    color: white;
+}
+
+#valideEmail, #valideMessage, #validePrenom, #valideNom {
+    color: red;
 }
