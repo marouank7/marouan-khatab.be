@@ -2,7 +2,13 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
+    
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+
 .navbar{
     border-bottom: 1px solid black;
 }
@@ -35,12 +41,24 @@ body{
     width: 350px;
     height: 200px;
 }
-
 .fa{
-    font-size: 40px;
     color: white;
+}
+.fa-github:hover{
+    color: grey;
+}
+
+.fa-linkedin:hover{
+    color: grey;
 }
 
 #valideEmail, #valideMessage, #validePrenom, #valideNom {
     color: red;
+}
+
+#about{
+background-image: url("./img/workSpace.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
