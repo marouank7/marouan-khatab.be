@@ -7,6 +7,7 @@
     <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    
     <script src="https://kit.fontawesome.com/1eb810bdc5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -15,6 +16,11 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="app.js"></script>
+    <!-- animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="aos.js"></script>
+    
 </head>
 
 <body data-spy="scroll" data-target="#navBar1" data-offset="60">
@@ -56,8 +62,8 @@
 
         <div class="mt-auto">
             <img src="img/Photo_Marouan.jpg" class="imgProfilAcc" alt="Profil pic"> 
-            <h1>Hello, moi c'est Marouan</h1>
-            <p class="lead">Développeur Web</p>
+            <h3>Marouan KHATAB</h3>
+            <h1>Développeur Web</h1>
             <p class="lead">
                 <a href="docs/CV_Marouan_Khatab.pdf" target="_blank" class="btn btn-lg btn-secondary">Télécharger CV</a>
             </p>
@@ -73,10 +79,10 @@
     <div class="py-5" id="portfolio"></div>
         <h2 class="text-center mb-5 text-uppercase">Portfolio</h2>
 
-        <div class="container">
+        <div class="container" >
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-12">
-                    <div class="card mb-4 shadow-sm">
+                    <div class="card mb-4 shadow-sm sizeContainer">
                         <img src="img/logo_eBloom.png" alt="card image" class="card-img-top imgMax">
                         <div class="card-body">
                             <h4>Ebloom</h4>
@@ -100,7 +106,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <div class="card mb-4 shadow-sm">
+                    <div class="card mb-4 shadow-sm sizeContainer">
                         <img src="img/Pictionary.jpg" alt="card image" class="card-img-top imgMax" >
                         <div class="card-body">
                             <h4>Pictionary</h4>
@@ -123,7 +129,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <div class="card mb-4 shadow-sm">
+                    <div class="card mb-4 shadow-sm sizeContainer">
                         <img src="img/yearbook.jpg" alt="card image" class="card-img-top imgMax" >
                         <div class="card-body">
                             <h4>Yearbook</h4>
@@ -150,12 +156,17 @@
     <!-- attention div  -->
                 <section class="bg-dark text-white py-5" id="about">
                     <div class="container py-5">
-                        <h2 class="text-center text-uppercase text-dark pb-3">À Propos</h2>
+                        <h2 class="text-center text-uppercase text-light pb-3">À Propos</h2>
                         <div class="row d-flex justify-content-center">
                             <div class="col-lg-4">
-                                <p class="lead text-dark">Jeune développeur à la recherche de nouveaux défis à réaliser. Avec un bon bagage en poche tout droit sorti de la Wild Code School, je mets à votre disposition mes compétences Font-End: HTML5, CSS3, Javascript, Bootstrap, React.Js et Material-UI. J’ai eu l’occasion d’apprendre également Node.Js et MySql pour la partie Back-End.
+                                <p class="lead text-light">Jeune développeur à la recherche de nouveaux défis à réaliser. Avec un bon bagage en poche tout droit sorti de la Wild Code School, je mets à votre disposition mes compétences Font-End: HTML5, CSS3, Javascript, Bootstrap, React.Js et Material-UI. 
+                                    
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="lead text-light">J’ai eu l’occasion d’apprendre également Node.Js et MySql pour la partie Back-End.
                                     N’hésitez pas à prendre contact avec moi pour de nouveaux challenges !
-                                    </p>
+                                </p>
                             </div>
                         </div>
                         <div class="text-center mt-4">
@@ -309,7 +320,10 @@
                                             <div class="input-group-prepend">
                                               <div class="input-group-text"><i class="fas fa-user"></i></div>
                                             </div>
-                                            <input type="text" id="form_prenom" class="form-control" name="prenom" placeholder="Prénom *" required="required">
+                                            <input type="text" id="form_prenom" class="form-control" name="prenom" placeholder="Prénom" required="required">
+                                            <div class="input-group-prepend">
+                                              <div class="input-group-text">*</div>
+                                            </div>
                                         </div>
                                         <h6 id="validePrenom">Vous devez inscire votre prénom.</h6>
 
@@ -317,21 +331,27 @@
                                             <div class="input-group-prepend">
                                               <div class="input-group-text"><i class="fas fa-user"></i></div>
                                             </div>
-                                            <input type="text" id="form_nom" class="form-control" name="nom" placeholder="Nom *" required="required">
+                                            <input type="text" id="form_nom" class="form-control" name="nom" placeholder="Nom" required="required">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">*</div>
+                                            </div>
                                         </div>
                                         <h6 id="valideNom">Vous devez inscrire votre Nom.</h6>
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend">
                                               <div class="input-group-text"><i class="fas fa-envelope"></i></div>
                                             </div>
-                                            <input type="email" id="form_email" class="form-control" name="email" placeholder="Email *" required="required"> 
+                                            <input type="email" id="form_email" class="form-control" name="email" placeholder="Email" required="required">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">*</div>
+                                            </div>
                                         </div>
                                         <h6 id="valideEmail">Votre email n'est pas valide.</h6>
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend">
                                               <div class="input-group-text"><i class="fas fa-phone-alt"></i></div>
                                             </div>
-                                            <input type="number" id="form_phone" class="form-control" name="phone" placeholder="Téléphone" required="required">
+                                            <input type="number" id="form_phone" class="form-control" name="phone" placeholder="Téléphone" >
                                         </div>
 
 
@@ -351,7 +371,12 @@
                                             <h6 id="valideEmail">Votre email n'est pas valide.</h6>
                                         </div> -->
                                         <!-- <label for="form_message">Message *</label> -->
-                                        <textarea class="form-control" name="message" id="form_message" rows="4" required="required"  placeholder="Message *"></textarea>
+                                        <div class="input-group mb-3">
+                                            <textarea class="form-control" name="message" id="form_message" rows="4" required="required"  placeholder="Message"></textarea>
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">*</div>
+                                            </div>
+                                        </div>  
                                         <h6 id="valideMessage">Votre message doit contenir plus de 10 caractères.</h6>
                                         <div class="text-center">
                                             <input type="submit" class="btn btn-success btn-send mt-3" value="Envoyez" id="submitt">                                  

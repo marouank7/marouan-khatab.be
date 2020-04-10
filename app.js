@@ -1,5 +1,3 @@
-console.log("its work")
-
 $(document).ready(function(){
     $('#validePrenom').hide()
     $('#valideNom').hide()
@@ -45,3 +43,4 @@ $(document).ready(function(){
 
     })
 })
+
