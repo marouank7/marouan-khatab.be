@@ -1,15 +1,41 @@
 $(document).ready(function(){
+
+      // attach a callback function to window scroll event
+    window.onscroll = function () {
+        toggleNavClassOnScroll();
+    };
+    let navbar = document.querySelector("#navbar")
+    let navLink = document.querySelectorAll(".nav-link")
+
+    function toggleNavClassOnScroll() {
+    // apply a style class based on the current state of the scrolling
+    if (window.pageYOffset > 0) {
+      navbar.classList.remove("navbar-light");
+      navbar.classList.add("bg-light");
+      for(i=0 ; i < navLink.length ; i++){
+        navLink[i].classList.remove("text-light")
+        navLink[i].classList.add("text-dark")
+      }
+      
+
+    } else {
+      navbar.classList.remove("navbar-light");
+      navbar.classList.remove("bg-light");
+      for(i=0 ; i < navLink.length ; i++){
+        navLink[i].classList.remove("text-dark")
+        navLink[i].classList.add("text-light")
+      }
+      
+      
+      
+    //   navbar.classList.add("navbar-light");
+    }
+  }
+
     $('#validePrenom').hide()
     $('#valideNom').hide()
     $('#valideEmail').hide()
     $('#valideMessage').hide()
-
-    // $('.navbar a , footer a').on("click", function(event){
-    //     event.preventDefault();
-    //     var hash = this.hash;
-
-    //     $('body, html').animate({scrollTop: $(hash).offset().top} , 900 , function(){window.location.hash = hash;})
-    // })
 
     $('#submitt').click(function(event){
         
@@ -43,4 +69,6 @@ $(document).ready(function(){
 
     })
 })
+
+
 

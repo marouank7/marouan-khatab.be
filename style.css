@@ -9,9 +9,13 @@ html {
     scroll-behavior: smooth;
   }
 
-.navbar{
-    border-bottom: 1px solid black;
+#navbar{
+    transition: background-color 1s;
 }
+
+/* .navbar{
+    border-bottom: 1px solid black;
+} */
 
 .imgProfilAcc{
     width: 150px;
@@ -72,4 +76,14 @@ html {
 
 .sizeContainer{
     height: 550px;
+}
+
+.card img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 10px 10px 20px lightgrey;
 }
