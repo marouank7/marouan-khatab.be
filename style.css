@@ -22,13 +22,19 @@ html {
     border-radius: 50%;
 }
 
-#accueil{
+/* #accueil{
     min-height: 100vh;
     background-image: url("./img/coverMac.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     
+} */
+
+#picAndCv{
+    position: absolute;
+    bottom: 40%;
 }
+
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
@@ -95,3 +101,21 @@ html {
     border-radius: 1rem;
     box-shadow: 10px 10px 20px lightgrey;
 }
+
+/* particuls */
+
+#particles-js{
+    min-height: 100vh;
+    background-image: url("./img/auror.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: rgba(103, 94, 233, 0.788); */
+}
+
+/* #accueil{
+    min-height: 100vh;
+    background-image: url("./img/coverMac.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} */

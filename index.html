@@ -20,8 +20,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <script src="aos.js"></script> -->
-    
+
+    <!-- particls.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> 
 </head>
+
+
+    
 
 <body data-spy="scroll" data-target="#navBar1" data-offset="60">
     
@@ -58,9 +63,9 @@
 
     <!--  Acceuil  -->
 
-    <div class="text-white bg-dark text-center d-flex flex-column align-items-center w-100 h-75 p-3 mx-auto" id="accueil">
+    <div class="text-white bg-dark text-center d-flex flex-column align-items-center w-100 h-75 p-3 mx-auto" id="particles-js">
 
-        <div class="mt-auto">
+        <div class="mt-auto" id="picAndCv">
             <img src="img/Photo_Marouan.jpg" class="imgProfilAcc" alt="Profil pic"> 
             <h3 class="text-light">Marouan KHATAB</h3>
             <h1 class="text-light">Développeur Web</h1>
@@ -75,6 +80,16 @@
     </div>
 
     <!-- Portfolio -->
+    <!-- <div id="particles-js">
+
+    </div> -->
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('particles.js loaded...');
+            });
+    </script>
+
+    </div>
 
     <div class="py-5" id="portfolio"></div>
         <h2 class="text-center mb-5 text-uppercase">Portfolio</h2>
